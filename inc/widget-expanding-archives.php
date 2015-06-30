@@ -75,9 +75,11 @@ class NG_Expanding_Archives_Widget extends WP_Widget {
             <li>
                 <a href="<?php bloginfo( 'url' ) ?>/<?php echo $month->year; ?>/<?php echo date( "m", mktime( 0, 0, 0, $month->month, 1, $month->year ) ) ?>" data-month="<?php echo date( "m", mktime( 0, 0, 0, $month->month, 1, $month->year ) ); ?>" data-year="<?php echo $month->year; ?>" class="clear expanding-archives-clickable-month <?php echo ( $month->year == $date_current_year && date( "m", mktime( 0, 0, 0, $month->month, 1, $month->year ) ) == $date_current_month ) ? 'expandable-archive-rendered-true' : ''; ?>">
 
+                <?php // @todo date translations ?>
+
                     <span class="expanding-archive-month">
                     <span class="expand-collapse<?php echo ( $month->year == $date_current_year && date( "m", mktime( 0, 0, 0, $month->month, 1, $month->year ) ) == $date_current_month ) ? ' archive-expanded' : ''; ?>">
-                    <?php echo ( $month->year == $date_current_year && date( "m", mktime( 0, 0, 0, $month->month, 1, $month->year ) ) == $date_current_month ) ? '&ndash;' : '+'; ?></span> <?php echo date( "F", mktime( 0, 0, 0, $month->month, 1, $month->year ) ) ?>
+                    <?php echo ( $month->year == $date_current_year && date( "m", mktime( 0, 0, 0, $month->month, 1, $month->year ) ) == $date_current_month ) ? '&ndash;' : '+'; ?></span> <?php echo date_i18n( "F", mktime( 0, 0, 0, $month->month, 1, $month->year ) ) ?>
                     </span>
                     <i class="fa"></i>
                     <span class="expanding-archive-count">(<?php echo $month->post_count; ?>)</span>

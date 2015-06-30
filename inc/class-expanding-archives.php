@@ -304,9 +304,8 @@ class NG_Expanding_Archives {
 	 * @return void
 	 */
 	public function delete_transient( $new_status, $old_status, $post ) {
-		// When a new post is published.
-		if ( $old_status != 'publish' && $new_status == 'publish' ) {
-			// Delete our transient.
+		// Delete our transient.
+		if ( $new_status == 'publish' ) {
 			delete_transient( 'expanding_archives_current_month_posts' );
 		}
 	}

@@ -54,7 +54,13 @@ Change the year font colour:
 
 == Changelog ==
 
+= 1.0.1 =
+* Month names are now displayed using date_i18n() instead of date() so they will translate.
+
 = 1.0.0 =
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+Month names are now available in all languages.
