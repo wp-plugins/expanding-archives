@@ -3,7 +3,7 @@ Contributors: NoseGraze
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=L2TL7ZBVUMG9C
 Tags: widget, sidebar, posts, archives, navigation, menu, collapse, expand, collapsing, collapsible, expanding, expandable
 Requires at least: 3.0
-Tested up to: 4.2
+Tested up to: 4.3
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -54,6 +54,9 @@ Change the year font colour:
 
 == Changelog ==
 
+= 1.0.2 =
+* Tested with WordPress version 4.3.
+
 = 1.0.1 =
 * Month names are now displayed using date_i18n() instead of date() so they will translate.
 
@@ -62,5 +65,5 @@ Change the year font colour:
 
 == Upgrade Notice ==
 
-= 1.0.1 =
-Month names are now available in all languages.
+= 1.0.2 =
+Tested with WordPress version 4.3
